@@ -118,3 +118,7 @@ for x in Result:
 Result = set.difference(EvenNum, FullSquares)
 for x in Result:
     print("Difference of many : {0}".format(x))
+
+Result = set.symmetric_difference(EvenNum, FullSquares)
+for x in Result:
+    print("Symetric difference of many : {0}".format(x))
