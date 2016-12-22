@@ -93,5 +93,20 @@ else:
             else:
                 ArrWord[word] = 1
 
-    for x in ArrWord.keys():
-        print("{0} : {1}".format(x, ArrWord[x]))
+for x in ArrWord.keys():
+    print("{0} : {1}".format(x, ArrWord[x]))
+
+    EvenNum = set()
+    FullSquares = set()
+    import math
+
+    for n in Num:
+        if n % 2 == 0:
+            EvenNum.add(n)
+        if n >= 0:
+            if math.sqrt(n) - (int)(math.sqrt(n)) == 0:
+                FullSquares.add(n)
+
+    Result = set.intersection(EvenNum, FullSquares)
+    for x in Result:
+        print("Intersection of many : {0}".format(x))
