@@ -7,7 +7,6 @@ def MinElem(Num):
             min = n
     return min
 
-
 min = MinElem(Num)
 print("There is min element: {0}".format(min))
 
@@ -18,6 +17,16 @@ def MaxElem(Num):
             max = n
     return max
 
-
 max = MaxElem(Num)
 print("There is min element: {0}".format(max))
+
+def Fib(n):
+    if n < 1:
+        return 0
+    if n == 1:
+        return 1
+    return Fib(n - 1) + Fib(n - 2)
+
+
+fib = Fib(7)
+print("Fib = {0}".format(fib))
