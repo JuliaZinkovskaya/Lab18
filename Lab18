@@ -81,3 +81,17 @@ if re.search("[qwrtypsdfghjklzxcvbnm]", str) != None:
     print("This word contains consonants.")
 else:
     print("This word not contains consonants.")
+
+    str = input("Enter string: ")
+    ArrStr = re.split('\.|!|\?|,|:|;| ', str)
+    ArrWord = {}
+    for word in ArrStr:
+        if re.search("[qwrtypsdfghjklzxcvbnm]", word) != None and re.search("-", word) == None:
+            print(word)
+            if word in ArrWord:
+                ArrWord[word] = ArrWord[word] + 1
+            else:
+                ArrWord[word] = 1
+
+    for x in ArrWord.keys():
+        print("{0} : {1}".format(x, ArrWord[x]))
