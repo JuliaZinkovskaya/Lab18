@@ -114,3 +114,7 @@ for x in Result:
 Result = set.union(EvenNum, FullSquares)
 for x in Result:
     print("Union of many : {0}".format(x))
+
+Result = set.difference(EvenNum, FullSquares)
+for x in Result:
+    print("Difference of many : {0}".format(x))
