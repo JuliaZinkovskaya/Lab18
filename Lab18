@@ -73,3 +73,11 @@ print("MultMatrix = {0}".format(Arr))
 
 Arr = MultMatrix([[2, 1, 3], [1, 2, 3]], [[2, 0], [5, 8]])
 print("MultMatrix = {0}".format(Arr))
+
+str = input("Enter word: ")
+import re
+
+if re.search("[qwrtypsdfghjklzxcvbnm]", str) != None:
+    print("This word contains consonants.")
+else:
+    print("This word not contains consonants.")
